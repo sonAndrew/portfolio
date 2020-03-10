@@ -1,5 +1,8 @@
 {
   "require-dev": {
     "heroku/heroku-buildpack-php": "*"
-  }
+  },
+  "post-install-cmd": [
+     "chmod -R 755 public/"
+ ]
 }

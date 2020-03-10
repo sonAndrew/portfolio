@@ -1,6 +1,6 @@
 {
   "name": "Start on Heroku: PHP",
   "description": "My portfolio site with one php file.",
-  "repository": "https://github.com/heroku/php-getting-started",
+  "repository": "https://github.com/sonAndrew/portfolio.git",
   "addons": []
 }
