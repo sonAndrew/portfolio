@@ -1,6 +1,7 @@
 <?php 
     // create short variable names
-    $name=$_POST['namefull'];
+    $fname=$_POST['fname'];
+    $lname=$_POST['lname'];
     $company=$_POST['company'];
     $email=$_POST['email'];
     $message=$_POST['message'];
@@ -9,7 +10,8 @@
     // set up some static information
     $toAddress   =  "andrewz.jackson667@gmail.com";
     $subject     =  "Message from website";
-    $mailContent =  "Customer name: ".filter_var($name)."\n".
+    $mailContent =  "Customer first name: ".filter_var($fname)."\n".
+                    "Customer last name: ".filter_var($lname)."\n".
                     "Customer company: ".filter_var($company)."\n".
                     "Customer email: ".$email."\n".
                     "Customer comments:\n".$message."\n";
