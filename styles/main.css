@@ -17,6 +17,7 @@ a {
 }
 .title-bar {
     background-color: #F2F2F2;
+    margin-bottom: 15px;
 }
 #nav-logo-small{
     width: 16%;
@@ -25,7 +26,7 @@ a {
 .menu-icon::before {
     font-size: 2.2em;
     color:#0600FF;
-    margin: -4px 0px 0px 24px;
+    margin: -4px 0px 0px 2rem;
 }
 .menu-icon::after {
     display: none;
@@ -36,11 +37,11 @@ a {
 }
 .hero-section > h2 {
     font-size: 32px;
-    padding: 40px 40px 40px 16%;
+    padding: 40px 40px 40px 18%;
 }
 .hero-text {
     margin-left: 20px;
-    padding: 5px 25px 25px 25px;
+    padding: 5px 25px 25px 12%;
 }
 .follow-me > p {
     margin-left: 45px;
@@ -57,11 +58,101 @@ a {
 .follow-me > ul > li > a > i {
     font-size: 2.2em;
 }
+/* mobile 360px */
+@media only screen and (min-width: 360px) {
+    .menu-icon::before {
+        margin: -4px 0px 0px 4rem;
+    }
+}
+/* mobile 375px */
+@media only screen and (min-width: 375px) {
+    .menu-icon::before {
+        margin: -4px 0px 0px 5rem;
+    }
+}
+/* mobile 384px */
+@media only screen and (min-width: 384px) {
+    .menu-icon::before {
+        margin: -4px 0px 0px 5.6rem;
+    }
+}
+/* mobile 414px */
+@media only screen and (min-width: 414px) {
+    .menu-icon::before {
+        margin: -4px 0px 0px 7.5rem;
+    }
+    .hero-section > h2 {
+        font-size: 38px;
+        padding: 40px 40px 40px 20%;
+    }
+    .hero-text {
+        padding: 5px 25px 25px 16%;
+    }
+    .hero-text > h2 {
+        font-size: 30px;
+    }
+    .hero-text > p {
+        font-size: 22px;
+    }
+}
+/* mobile / flip 568px */
+@media only screen and (min-width: 568px) {
+    #nav-logo-small {
+        margin: 10px 0 0 45px;
+    }
+    .menu-icon::before {
+        margin: -4px 0px 0px 15rem;
+    }
+}
+/* mobile / flip 667px */
+@media only screen and (min-width: 667px) {
+    .menu > li.menu-text {
+        padding: 0;
+        margin: -5px 0 0 0;
+    }
+    .menu > li.menu-links {
+        margin: 15px 0 0 -15px;
+        padding: 0;
+    }
+    #nav-logo-small {
+        margin: 10px 0 0 45px;
+    }
+    .menu-icon::before {
+        margin: -4px 0px 0px 15rem;
+    }
+}
+/* mobile / flip 736px */
+@media only screen and (min-width: 736px) {
+    .menu > li.menu-links {
+        margin: 15px 0 0 5px;
+    }
+    #bodySection {
+        margin-top: 90px;
+    }
+    .hero-text {
+        order: 1;
+        padding: 5px 25px 25px 8%;
+    }
+    h2 > span{
+        font-size: 40px;
+    }
+    .hero-section > h2 {
+        order: 2;
+        padding: 40px 40px 40px 4%;
+        font-size: 32px;
+    }
+    .hero-text > p {
+        margin-top: 15px;
+    }
+    .hero-text > p > span {
+        font-size: 26px;
+    }
+}
 /* tablet 768px */
 @media only screen and (min-width: 768px) {
     .top-bar {
         background-color: #F2F2F2;
-        height: 70px;
+        height: 100px;
         padding: 0;
     }
     ul.menu {
@@ -71,105 +162,164 @@ a {
         width: 26%;
         margin: 0px 0px 0px 28px;
     }
-    li.menu-text {
+    .menu > li.menu-text {
         padding: 0 !important;
-        margin: 10px 17% 0px 5%;
+        margin: 10px 0% 0px 0%;
     }
-    li.menu-links {
-        margin-top: 35px;
+    .menu > li.menu-links {
+        margin: 35px 0 0 25px;
     }
     .hero-section {
-        margin-top: 50px;
+        margin-top: 10rem;
     }
     .hero-section > h2 {
-        padding: 210px 40px 40px 7%;
         order: 2;
+        width: 50%;
+        font-size: 34px;
+        padding: 140.6px 0 0 12%;
+        margin: 0;
     }
     .hero-text {
-        padding: 85px 25px 25px 4.5%;
-        margin-bottom: 1rem;
         order: 1;
+        width: 50%;
+        padding: 0 0 0 12%;
+        margin: 0;
     }
     .hero-text > h2 {
-        font-size: 2.2rem;
+        font-size: 34px;
+        margin: 0;
+    }
+    h2 > span {
+        font-size: 40px;
+    }
+    .hero-text > p {
+        font-size: 22px;
+        margin-top: 36px;
+    }
+    .hero-text > p > span {
+        font-size: 28px;
     }
     .follow-me {
-        margin-left: 30px;
+        margin: 36px 0 0 6.5%;
     }
 }
 /* tablet 834px */
 @media only screen and (min-width: 834px) {
-    li.menu-text {
-        margin: 10px 22% 0px 5%;
+    .menu > li.menu-text {
+        padding: 0 !important;
+        margin: 10px 0% 0px 5%;
     }
-    .hero-section > h2 {
-        padding: 245px 40px 40px 10%;
-    }
-    .hero-text {
-        padding: 85px 25px 25px 6.5%;
+    .menu > li.menu-links {
+        margin: 35px 0 0 25px;
     }
 }
 /* tablet 1024px */
 @media only screen and (min-width: 1024px) {
-    li.menu-text {
-        margin: 10px 34% 0px 5%;
+    .menu > li.menu-text {
+        margin: 0px 10% 0px 8%;
     }
     .hero-section > h2 {
-        font-size: 40px;
+        font-size: 48px;
     }
-    .hero-text > h2 {
-        font-size: 3rem;
+    .hero-section > h2 {
+        font-size: 50px;
     }
-    .hero-text {
-        padding: 85px 25px 25px 7%;
+    h2 > span {
+        font-size: 52px;
     }
-    .hero-text > p{
-        font-size: 1.3em;
+    .hero-text > p {
+        font-size: 28px;
+    }
+    .hero-text > p > span {
+        font-size: 30px;
     }
     .follow-me {
-        margin-left: 45px;
+        margin: 36px 0 0 7.5%;
+    }
+}
+/* tablet 1112px */
+@media only screen and (min-width: 1112px) {
+    .menu > li.menu-text {
+        margin: 0px 17% 0px 8%;
     }
 }
 /* laptop 1280px */
 @media only screen and (min-width: 1280px) {
-    li.menu-text {
-        margin: 10px 45% 0px 5%;
+    .menu > li.menu-text {
+        margin: 10px 17% 0px 9%;
     }
-    .nav-logo-small {
-        width: 35%;
-        margin: 35px 0px 0px 28px;
-    }
-    .menu-links {
-        margin-top: 85px;
-    }
-    .hero-section > h2 {
-        font-size: 45px;
-    }
-    .hero-text {
-        padding: 85px 25px 25px 14%;
-    }
-    .follow-me {
-        margin-left: 155px;
-    }
-    .follow-me > p{
-        font-size: 1.5em;
+    .menu > li.menu-links {
+        font-size: 1.3rem;
     }
     .follow-me > ul > li > a > i {
         font-size: 2.2em;
     }
+    .follow-me {
+        margin: 36px 0 0 8.5%;
+    }
+}
+/* laptop 1366px */
+@media only screen and (min-width: 1366px) {
+    .top-bar {
+        height: 100px;
+    }
+    #nav-logo-small{
+        width: 32%;
+    }
+    .menu > li.menu-text {
+        margin: 10px 15% 0px 13%;
+    }
+    .menu > li.menu-links {
+        font-size: 1.3rem;
+        margin-top: 50px;
+    }
+    .hero-text {
+        padding: 0 0 0 16%;
+    }
+    .hero-text > h2 {
+        font-size: 36px;
+    }
+    h2 > span {
+        font-size: 60px;
+    }
+    .follow-me {
+        margin: 36px 0px 0px 12.5%;
+    }
 }
 /* laptop 1440px */
 @media only screen and (min-width: 1440px) {
-    li.menu-text {
-        margin: 10px 45% 0px 8%;
+    .top-bar {
+        height: 100px;
     }
-    .hero-section > h2 {
-        font-size: 45px;
+    #nav-logo-small{
+        width: 32%;
+    }
+    .menu > li.menu-links {
+        font-size: 1.4rem;
+        margin-top: 50px;
+    }
+    .menu > li.menu-text {
+        margin: 10px 25% 0px 8%;
     }
     .hero-text {
-        padding: 85px 25px 25px 17%;
+        padding: 0 0 0 16%;
+    }
+    .hero-text > h2 {
+        font-size: 36px;
+    }
+    h2 > span {
+        font-size: 60px;
     }
     .follow-me {
-        margin: 10px 0px 0px 110px;
+        margin: 36px 0px 0px 12.5%;
+    }
+}
+/* laptop 1920px */
+@media only screen and (min-width: 1920px) {
+    .menu > li.menu-text {
+        margin: 10px 32% 0px 14%;
+    }
+    .follow-me {
+        margin: 50px 0 0 13.5%;
     }
 }
